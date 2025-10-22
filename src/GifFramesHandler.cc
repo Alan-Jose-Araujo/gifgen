@@ -2,7 +2,7 @@
  * GifFramesHandler implementation.
  * @author Alan José <alanjsdelima@gmail.com>
  */
-#define GIF_FRAMES_HANDLER_IMPLEMENTATION
+#define GIF_FRAMES_HANDLER_H_IMPLEMENTATION
 #include "../include/GifFramesHandler.hh"
 
 vector<string> GifFramesHandler::getFramePathsFromDir(string imagesDir) {

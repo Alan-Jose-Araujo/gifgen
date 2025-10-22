@@ -5,13 +5,13 @@
 #ifndef GIF_FRAMES_HANDLER_H
 #define GIF_FRAMES_HANDLER_H
 
+#include "./types.hh"
 #include <string>
 #include <vector>
 #include <filesystem>
 
 using namespace std;
 namespace fs = std::filesystem;
-using Frames = vector<string>;
 
 class GifFramesHandler {
 

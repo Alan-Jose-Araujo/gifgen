@@ -2,7 +2,7 @@
  * CliArgumentParser implementation.
  * @author Alan José <alanjsdelima@gmail.com>
  */
-#define CLI_ARGUMENT_PARSER_IMPLEMENTATION
+#define CLI_ARGUMENT_PARSER_H_IMPLEMENTATION
 #include "../include/CliArgumentParser.hh"
 
 CliArgumentParser::CliArgumentParser(const char* shortOptions, const std::vector<option>& longOptions)
