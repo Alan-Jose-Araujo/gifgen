@@ -27,6 +27,9 @@ class CliArgumentParser {
 
         CliArgumentParser(const char* shortOptions, const std::vector<option>& longOptions);
 
+        /**
+         * This method recieves the arguments count and values from main function.
+         */
         void parse(int argc, char* argv[], const std::function<void(int, const char*)>& callback);
 
 };

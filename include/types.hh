@@ -5,4 +5,6 @@
 #include <vector>
 #include <string>
 
-using Frames = std::vector<std::string>;
+using namespace std;
+
+using Frames = vector<string>;

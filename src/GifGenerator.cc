@@ -8,6 +8,7 @@
 #include "../include/GifGenerator.hh"
 #include "../vendor/gif.hh"
 #include "../vendor/stb_image.hh"
+#include "../include/PathUtils.hh"
 #include <iostream>
 
 struct GifGenerator::Impl {
@@ -52,8 +53,10 @@ void GifGenerator::generate() {
     p->width = frameW;
     p->height = frameH;
 
+    string fullOutputPath = PathUtils::prepareOutputPath(p->outputPath);
+
     // Initialize the GIF file.
-    if (!GifBegin(&p->writer, p->outputPath.c_str(), p->width, p->height, p->delayMs / 10)) {
+    if (!GifBegin(&p->writer, fullOutputPath.c_str(), p->width, p->height, p->delayMs / 10)) {
         stbi_image_free(firstImage);
         throw runtime_error("Could not initialize GIF file.");
     }
