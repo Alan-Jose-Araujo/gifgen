@@ -20,6 +20,7 @@ class GifFramesHandler {
         static vector<string> getFramePathsFromDir(string imagesDir);
 
         static void orderFramesByWriteTime(Frames& frames, const string order);
+        
 };
 
 #endif
