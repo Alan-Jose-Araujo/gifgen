@@ -8,7 +8,7 @@
 
 using namespace std;
 
-#define VERSION "0.1"
+#define VERSION "1.0"
 #define AUTHOR "Alan Jose <alanjsdelima@gmail.com>"
 
 void InfoPresenter::printHelpMessage() {
